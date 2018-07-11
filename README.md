@@ -4,7 +4,7 @@ This repository contains templates, scripts and other resources to help you buil
 
 If you would like to contribute to this repo, please see our [Contributing guide](contributing.md). 
 
-See our [IDLx Best Practices and Lab Authoring Guide](https://github.com/LearnOnDemandSystems/docs/blob/test/guides/idl2/idlv2-authoring-guide-and-best-practice.md) for more information on:
+See our [IDLx Best Practices and Lab Authoring Guide](https://labondemand.com/Help/?caller=&src=https%3A%2F%2Fraw.githubusercontent.com%2FLearnOnDemandSystems%2Fdocs%2Fmaster%2Fguides%2Fidl2%2Fidlv2-authoring-guide-and-best-practice.md) for more information on:
 Markdown, IDLx best practices, lab instruction interface, uploading files into your lab, and many other topics that may assist with authoring your lab. 
 
 If you are looking for more information about the Lab on Demand platform, please see our [Lab on Demand Documentation](https://labondemand.com/help)
