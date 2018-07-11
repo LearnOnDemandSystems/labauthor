@@ -32,12 +32,18 @@ Script:
 param($LabInstanceId) 
 $result = $false
 $resourceGroupName = "CSSTlod${LabInstanceId}"
-$storAccount = Get-AzureRmStorageAccount -ResourceGroupName $resourceGroupName -Name "sa${LabInstanceId}" -ErrorAction Ignore    
+$storageAccountName = "sa${LabInstanceId}"
+$storAccount = Get-AzureRmStorageAccount -ResourceGroupName $resourceGroupName -Name $storageAccountName -ErrorAction Ignore    
 if ($storAccount -eq $null){
     "The Storage Account has not been created"    
 } else {
     $result = $true
-    "You successfully created the storage account."
+    "The storage account has been successfully created."
 }
 $result
 ```
+
+### Variables
+$resourceGroupName - Should match the name of your resource group in the lab profile. **NOTE** lod${LabInstanceId} is added to resource group names automatically when a lab is launched and therefore should remain.
+
+$storageAccountName - The name of the storage account the user is expected to create.
