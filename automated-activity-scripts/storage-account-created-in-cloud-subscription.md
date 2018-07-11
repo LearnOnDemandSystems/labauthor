@@ -1,5 +1,6 @@
 # Storage Account Created in Cloud Subscription
 
+### Description
 The Automated Activity below will check if the student has created a storage account in the cloud subscription. Scoring needs to be enabled in the lab profile.
 
 ### New Automated Activity 
