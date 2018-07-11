@@ -17,8 +17,7 @@ The Automated Activity below will check if the student has created a storage acc
 |Correct answer feedback|Leave blank|
 |Incorrect answer feedback|Leave blank|
 
-### Script 1
-There are two scripts below; 
+### Script 
 
 |Field|Value| 
 |---|--|
