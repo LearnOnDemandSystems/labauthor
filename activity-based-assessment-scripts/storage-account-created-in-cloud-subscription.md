@@ -14,7 +14,7 @@ The Automated Activity below will check if the student has created a storage acc
 |Allow Retries|Yes|
 |Required for submission|Yes|
 |Block Page navigation|Yes|
-|Correct answer feedback|Leave blank,|
+|Correct answer feedback|Leave blank|
 |Incorrect answer feedback|Leave blank|
 
 ### Script 1
