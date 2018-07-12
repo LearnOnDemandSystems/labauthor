@@ -1,4 +1,4 @@
-# Learn on Demand Systems Lab Authoring Utilities
+# Learn on Demand Systems Lab Authoring Utility Scripts
 
 This folder contains utility scripts that may help you while you are building labs,
 whether they include Cloud Slice, Activity Based Assessments, or other resources.
