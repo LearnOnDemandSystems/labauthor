@@ -16,4 +16,4 @@ The following utility scripts are currently available:
 
 |Name|Description|
 |--|--|
-|[Test-ActivityScript.ps1](Test-ActivityScript.ps1)|Documented script that facilitates testing activity automation scripts outside of Lab on Demand.|
+|[Test-ActivityScript.ps1](Test-ActivityScript.ps1)|Facilitates testing activity automation scripts outside of Lab on Demand.|
