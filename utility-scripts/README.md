@@ -5,7 +5,7 @@ whether they include Cloud Slice, Activity Based Assessments, or other resources
 Please feel free to contribute scripts into this folder if you feel they would be
 useful to others who are authoring labs.
 
-:memo: **NOTE: These scripts are meant as sample utilities, and are not supported.**
+:memo: **NOTE: These scripts are not supported.**
 
 If you have questions about these scripts, post your question on the Issues tab, or
 visit the [Slack workspace][slack-workspace] and discuss the script there.
