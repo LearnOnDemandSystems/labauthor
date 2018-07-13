@@ -35,9 +35,11 @@ To install and try this script, perform the following tasks:
     }
     ```
     
-    You can put whatever script you want to test inside of the script block.
+    You can put whatever activity script you want to test inside of the script block.
     
     :bulb: Don't forget to set the variables used to log on to your subscription!
-    
+
+    :bulb: Replacement tokens are not supported by this command, so you'll need to replace them manually with actual values during your testing.
+
 1. To learn more about the command, invoke `Get-Help Test-ActivityScript -Full` in PowerShell.
 
