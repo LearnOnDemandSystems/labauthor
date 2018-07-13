@@ -14,6 +14,9 @@ visit the [Slack workspace][slack-workspace] and discuss the script there.
 
 The following utility scripts are currently available:
 
+|Name|Description|
+|[Test-ActivityScript](#test-activityscript)|Facilitates testing activity automation scripts outside of Lab on Demand.|
+
 #### [Test-ActivityScript](https://www.powershellgallery.com/packages/Test-ActivityScript/1.0/DisplayScript)
 
 This script facilitates testing activity automation scripts outside of Lab on Demand. To try this script, perform the following tasks:
