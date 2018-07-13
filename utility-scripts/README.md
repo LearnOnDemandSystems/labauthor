@@ -39,7 +39,7 @@ To install and try this script, perform the following tasks:
     
     :bulb: Don't forget to set the variables used to log on to your subscription!
 
-    :bulb: Replacement tokens are not supported by this command, so you'll need to replace them manually with actual values during your testing.
+    :warning: Replacement tokens are not supported by this command, so you'll need to replace them manually with actual values during your testing.
 
 1. To learn more about the command, invoke `Get-Help Test-ActivityScript -Full` in PowerShell.
 
