@@ -20,7 +20,7 @@ The following utility scripts are currently available:
 
 #### [Test-ActivityScript](https://www.powershellgallery.com/packages/Test-ActivityScript/1.0/DisplayScript)
 
-This script facilitates testing activity automation scripts outside of Lab on Demand. To try this script, perform the following tasks:
+To install and try this script, perform the following tasks:
 
 1. Invoke the following command in an elevated PowerShell session: `Install-Script -Name Test-ActivityScript`. If you are prompted to allow PowerShell to extend your PATH environment variable, answer "Yes".
 
