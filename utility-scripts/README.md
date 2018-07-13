@@ -35,7 +35,9 @@ To install and try this script, perform the following tasks:
     }
     ```
     
-    You can put whatever script you want to test inside of the script block. Don't forget to set the variables used to log on to your subscription!
+    You can put whatever script you want to test inside of the script block.
+    
+    :bulb: Don't forget to set the variables used to log on to your subscription!
     
 1. To learn more about the command, invoke `Get-Help Test-ActivityScript -Full` in PowerShell.
 
