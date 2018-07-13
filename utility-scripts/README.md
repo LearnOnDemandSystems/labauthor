@@ -14,6 +14,24 @@ visit the [Slack workspace][slack-workspace] and discuss the script there.
 
 The following utility scripts are currently available:
 
-|Name|Description|
-|--|--|
-|[Test-ActivityScript.ps1](Test-ActivityScript.ps1)|Facilitates testing activity automation scripts outside of Lab on Demand.|
+#### [Test-ActivityScript](https://www.powershellgallery.com/packages/Test-ActivityScript/1.0/DisplayScript)
+
+This script facilitates testing activity automation scripts outside of Lab on Demand. To try this script, perform the following tasks:
+
+1. Invoke the following command in an elevated PowerShell session: `Install-Script -Name Test-ActivityScript`. If you are prompted to allow PowerShell to extend your PATH environment variable, answer "Yes".
+
+1. Once it is installed, you can test activity scripts by invoking a command such as this example:
+
+    ```PowerShell
+    Test-ActivityScript -TenantId $tenant -SubscriptionId $sub -Credential $creds -ScriptBlock {
+        $vmName = 'Server1'
+        $nsgName = 'NSG1'
+        $port = 443
+        # Use Azure PowerShell to verify server Server1 has a network security group named NSG1 with port 443 allowed
+    }
+    ```
+    
+    You can put whatever script you want to test inside of the script block. Don't forget to set the variables used to log on to your subscription!
+    
+1. To learn more about the command, invoke `Get-Help Test-ActivityScript -Full` in PowerShell.
+
