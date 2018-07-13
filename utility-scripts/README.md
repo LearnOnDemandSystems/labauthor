@@ -22,7 +22,7 @@ The following utility scripts are currently available:
 
 To install and try this script, perform the following tasks:
 
-1. Invoke the following command in an elevated PowerShell session: `Install-Script -Name Test-ActivityScript`. If you are prompted to allow PowerShell to extend your PATH environment variable, answer "Yes".
+1. Invoke the following command in an elevated PowerShell session: `Install-Script -Name Test-ActivityScript`. If you are prompted to allow PowerShell to extend your PATH environment variable, answer `Yes`.
 
 1. Once it is installed, you can test activity scripts by invoking a command such as this example:
 
