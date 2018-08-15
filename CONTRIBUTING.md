@@ -9,7 +9,7 @@ Pull requests are the best way to propose changes and additoiins to this reposit
 1. Create your proposed changes or additions in your fork.
 1. Submit a Pull Request to learnondemandsystems/labauthor.
 
-## Report Issues with Resources using Github's issues
+## Report Issues with Resources using GitHub's issues
 We use GitHub issues to track bugs in the documentation. Report bugs by opening a new issue; it's that easy!
 
 ## Use a Consistent Style

@@ -20,8 +20,7 @@ Describe what the automated activity will do.
 |Correct answer feedback|Enter correct answer feedback|
 |Incorrect answer feedback|Enter incorrect correct answer feedback|
 
-### Script 1
-There are two scripts below; 
+### Script 1 
 
 |Field|Value| 
 |---|--|
@@ -34,3 +33,6 @@ Script:
 ```
 Enter script text 
 ```
+
+### Variables
+Define any variables used in the script.
