@@ -1,0 +1,16 @@
+{
+	"if": {
+		"not": {
+      "field": "type",
+      "in": [
+        "Microsoft.Compute/virtualMachines", 
+        "Microsoft.Network/networkSecurityGroups", 
+        "Microsoft.Network/publicIPAddresses", 
+        "Microsoft.Network/networkInterfaces"
+      ]
+    }
+	},
+	"then": {
+		"effect": "deny"
+	}
+}
