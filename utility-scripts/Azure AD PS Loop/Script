@@ -1,6 +1,4 @@
 $userEmail = '@lab.CloudPortalCredential(1).Username'
-$resourceGroupName = '@lab.CloudResourceGroup(###).Name'
-$roleDefinitionName = 'My Custom Role'
 
 # Get lab user account
 $totalDelay = 0
@@ -18,5 +16,5 @@ Write-Verbose -Message "Total delay: ${totalDelay} ms"
 if (-not $user) {
   throw "Failed to lookup Azure AD User '${UserEmail}' within 60 seconds."
 } else {
-  New-AzureRmRoleAssignment -ObjectId $user.Id -ResourceGroupName $resourceGroupName -RoleDefinitionName $roleDefinitionName
+  # Your Command(s) here
 }
