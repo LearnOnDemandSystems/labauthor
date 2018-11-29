@@ -10,5 +10,3 @@ See our [IDLx Best Practices and Lab Authoring Guide](https://labondemand.com/He
 Markdown, IDLx best practices, lab instruction interface, uploading files into your lab, and many other topics that may assist with authoring your lab. 
 
 If you are looking for more information about the Lab on Demand platform, please see our [Lab on Demand Documentation](https://labondemand.com/help)
-
-..
