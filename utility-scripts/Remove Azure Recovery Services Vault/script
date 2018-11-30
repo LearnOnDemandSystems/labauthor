@@ -1,0 +1,36 @@
+# Define Resource Groups used in lab
+$rgnames=@("@lab.CloudResourceGroup(###).Name")
+
+foreach($rgname in $rgnames){
+	# Get any Recovery Services Vaults in the resource group
+	$vaults = Get-AzureRmRecoveryServicesVault -ResourceGroupName $rgname
+	if($vaults -ne $null){
+		foreach($vault in $vaults){
+			# Set Vault Context
+			Set-AzureRmRecoveryServicesVaultContext -Vault $vault
+
+			# Find and Remove Backup Jobs
+			$backupjobs = Get-AzureRmRecoveryServicesBackupJob -Operation Backup -Status InProgress
+			foreach ($i in $backupjobs)  {Stop-AzureRmRecoveryServicesBackupJob -Job $i}
+
+			# Find and Remove VM Containers
+			$vmcontainers = Get-AzureRmRecoveryServicesBackupContainer -ContainerType AzureVM
+			ForEach ($container in $vmcontainers) {
+				$items = Get-AzureRmRecoveryServicesBackupItem -container $container -WorkloadType AzureVM
+				ForEach ($item in $items) {
+					Disable-AzureRmRecoveryServicesBackupProtection -item $item -RemoveRecoveryPoints -ea SilentlyContinue -Force
+				}
+			}
+
+			# Find and Remove Azure Backup Agents
+			$windowscontainers = Get-AzureRmRecoveryServicesBackupContainer -ContainerType "Windows" -BackupManagementType MARS
+			foreach($cont in $windowscontainers){
+				Unregister-AzureRmRecoveryServicesBackupContainer -Container $cont
+			}
+
+			# Teardown Vault and Resource Group
+			Remove-AzureRmRecoveryServicesVault -Vault $vault
+			Remove-AzureRmResourceGroup -Name $rgname -Force
+		}
+	}
+}
