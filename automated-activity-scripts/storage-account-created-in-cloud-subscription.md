@@ -29,7 +29,7 @@ The Automated Activity below will check if the student has created a storage acc
 Script:
 
 ```
-param($LabInstanceId) 
+$LabInstanceId = "@lab.LabInstance.Id"
 $result = $false
 $globalLabInstanceId = "lod${LabInstanceId}"
 $resourceGroupNamePrefix = "CSST"
