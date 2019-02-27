@@ -3,7 +3,9 @@
 		"allOf": [
 			{
 				"field": "location",
-				"notIn": "eastus"
+				"notIn": [
+					"eastus"
+				]
 			},
 			{
 				"field": "location",
