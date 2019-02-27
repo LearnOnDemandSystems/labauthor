@@ -1,7 +1,7 @@
 # What Are Azure Access Control Policies?
 Azure Access Control Policy is a Lab on Demand platform term. More natively, these are simply "Azure Policies". An access control policy is used to limit the resources that users can provision on the cloud platform. 
 
-For more information, see [Microsoft's Official Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/).
+For more information, see [Microsoft's Official Documentation](https://docs.microsoft.com/en-us/azure/governance/policy/overview).
 
 # Why Do I Need an Access Control Policy?
 The primary purposes of Access Control Policies are:
