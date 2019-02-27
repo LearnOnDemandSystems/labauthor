@@ -1,4 +1,4 @@
-# Full Lockdown Policy Sample
+# Block Resources by Type and SKU (Full Lockdown)
 
 The purpose of this policy is to prevent users from creating ANYTHING outside of the components you have specified. This is meant to be a sample for you to copy/paste/modify in order to tailor to your desired use case.
 
