@@ -9,7 +9,7 @@
             },
             {
                 "field": "type",
-                "equals": "Microsoft.Compute/virtualMachines"
+                "equals": "Microsoft.Compute/virtualMachines/osprofile.computername"
             }
         ]
     },
