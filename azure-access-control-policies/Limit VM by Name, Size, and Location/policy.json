@@ -24,15 +24,15 @@
                             ]
                         },
                         {
-				            "field": "location",
-				            "In": [
-					        "eastus"
-				            ]
-			            },
-			            {
-				            "field": "location",
-				            "notEquals": "global"
-			            }
+		            "field": "location",
+		            "In": [
+			        "eastus"
+			    ]
+			},
+		        {
+		            "field": "location",
+		            "notEquals": "global"
+		         }
                     ]
                 },                
                 {
