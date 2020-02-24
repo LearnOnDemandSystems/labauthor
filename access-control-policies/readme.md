@@ -25,13 +25,13 @@ This depends on a couple of variables such as what your policy is blocking and y
     - This deployment method is less common and is accomplished by selecting the "Deploy in Background" option on a resource template from the lab profile.
     - With these deployments the policies will be in place _while_ resources are deploying, so you will need to ensure there are exceptions within your policy for any resources the template is deploying.
 
-## Are there more samples available somewhere?
+## Are there sample policies available somewhere?
 Yes! For more samples, see the table below for each of the cloud providers:
 
-|Cloud Platform|Sample Repository|
-|--|--|
-|Microsoft Azure|[Microsoft Docs](https://docs.microsoft.com/en-us/azure/governance/policy/samples/index)|
-|Amazon Web Services|[AWS Docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html)|
+|Cloud Platform|LODS Sample|Official Samples|
+|--|--|--|
+|Microsoft Azure|[LODS Azure Samples](./Azure/)|[Microsoft Docs](https://docs.microsoft.com/en-us/azure/governance/policy/samples/index)|
+|Amazon Web Services|[LODS AWS Samples](./AWS/)|[AWS Docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html)|
 
 ## I'm creating a policy from scratch, how do I know what conditions or fields I can use?
 
