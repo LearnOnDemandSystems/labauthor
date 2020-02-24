@@ -1,5 +1,5 @@
-# Azure Restriction Policies
-Samples in this repository are designed by and for Lab on Demand Lab Authors. Within each folder is a sample policy, as well as a description of key components within that policy.
+# Azure Access Control Policy Samples
+Samples available here are designed by and for Lab on Demand Lab Authors. Within each folder is a sample policy, as well as a description of key components within that policy.
 
 Azure Policy Best Practices Include:
 
