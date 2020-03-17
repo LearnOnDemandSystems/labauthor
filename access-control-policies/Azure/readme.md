@@ -1,14 +1,14 @@
 # Azure Access Control Policy Samples
 Samples available here are designed by and for Lab on Demand Lab Authors. Within each folder is a sample policy, as well as a description of key components within that policy.
 
-Azure Policy Best Practices Include:
+## Azure Policy Best Practices:
 
-## Use a "Whitelist" policy model
+### Use a "Whitelist" policy model
 By default the Microsoft Azure platform utilzes a blacklist model to permissions. "Owner" and "Contributor" are among the most common roles on resource groups and these allow the user to do almost anything. Utilzing Azure Policy, you can limit the capabilities witihin entire resource groups (regardless of the user's role). Azure policy supports many different "effects" which vary widely and include allow, disable, audit, deny, and others.
 
 When designing policies for use within lab environments, the policy should be encased in a "not" statement and the "effect" should always be **Deny**. An example of this practice can be seen in the [Block Resources by Type and SKU](./Block%20Resources%20by%20Type%20and%20SKU%20(Full%20Lockdown)) sample on lines 3 and 14.
 
-## Allow only the virtual machines required by the lab - or none at all
+### Allow only the virtual machines required by the lab - or none at all
 
 Virtual machines (VMs) are the most abused resource by those with malicious intent (such as bitcoin miners). This means ANY allowance of VMs results in a more vulnerable lab. This vulnerbility can be minimized using methods that limit the number of virtual machines available to the user. The most common methods are by **SKU**, by **Region**, and by **Name**. Each of these items provides its own level of security as outlined below, with the combination of all 3 ensuring the highest level of security.
 

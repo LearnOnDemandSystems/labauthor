@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+      {
+        "Action": "ec2:*",
+        "Resource": "*",
+        "Effect": "Allow"
+      },
+      {
+          "Action": "ec2:RunInstances",
+          "Resource": "arn:aws:ec2:*:*:instance/*",
+          "Effect": "Deny",
+          "Condition": {
+              "StringNotEquals": {
+                  "ec2:InstanceType": [
+                      "t2.micro"
+                  ]
+              }
+          }
+      }
+    ]
+  }
