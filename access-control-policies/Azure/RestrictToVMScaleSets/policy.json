@@ -1,0 +1,39 @@
+{
+    "if": {
+        "not": {
+            "anyOf": [
+                {
+                    "allOf": [
+                        {
+                            "field": "type",
+                            "equals": "Microsoft.Compute/virtualMachineScaleSets"
+                        },
+                        {
+                            "field": "Microsoft.Compute/virtualMachineScaleSets/virtualMachineProfile.osProfile.computerNamePrefix",
+                            "equals": "vmss"
+                        },
+                        {
+                            "field": "Microsoft.Compute/virtualMachineScaleSets/sku.name",
+                            "equals": "Standard_D1_v2"
+                        }       
+                    ]
+                },                               
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Storage/storageAccounts"
+                },
+                {
+                    "field": "type",
+                    "contains": "microsoft.insights"
+                },                
+                {
+                    "field": "type",
+                    "contains": "Microsoft.Network"
+                }
+            ]
+        }
+    },
+    "then": {
+        "effect": "deny"
+    }
+}
