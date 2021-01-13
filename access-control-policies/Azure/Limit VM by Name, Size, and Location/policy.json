@@ -17,7 +17,7 @@
                             ]
                         },
                         {
-                            "field": "Microsoft.Compute/virtualMachines/osprofile.computername",
+                            "field": "name",
                             "in": [
                                 "VM-1",
                                 "VM-2"
