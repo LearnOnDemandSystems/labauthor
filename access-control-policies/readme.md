@@ -8,24 +8,24 @@ Access Control Policy is a Lab on Demand (LOD) platform term. More natively, the
 
 ## Table of Contents 
 
-- [What Are Access Control Policies?](#what-are-access-control-policies-)
-- [Why Do I Need an Access Control Policy?](#why-do-i-need-an-access-control-policy-)
-- [Frequently Asked Questions:](#frequently-asked-questions-)
-  * [Will an Access Control Policy block my lab resource templates from deploying?](#will-an-access-control-policy-block-my-lab-resource-templates-from-deploying-)
-  * [Are there sample policies available somewhere?](#are-there-sample-policies-available-somewhere-)
-  * [I'm creating a policy from scratch, how do I know what conditions or fields I can use?](#i-m-creating-a-policy-from-scratch--how-do-i-know-what-conditions-or-fields-i-can-use-)
+- [What Are Access Control Policies?](#what-are-access-control-policies)
+- [Why Do I Need an Access Control Policy?](#why-do-i-need-an-access-control-policy)
+- [Frequently Asked Questions:](#frequently-asked-questions)
+  * [Will an Access Control Policy block my lab resource templates from deploying?](#will-an-access-control-policy-block-my-lab-resource-templates-from-deploying)
+  * [Are there sample policies available somewhere?](#are-there-sample-policies-available-somewhere)
+  * [I'm creating a policy from scratch, how do I know what conditions or fields I can use?](#i-m-creating-a-policy-from-scratch--how-do-i-know-what-conditions-or-fields-i-can-use)
     + [Microsoft Azure](#microsoft-azure)
     + [Amazon Web Services](#amazon-web-services)
 
-# Why Do I Need an Access Control Policy?
+# Why Do I Need an Access Control Policy
 The primary purposes of Access Control Policies are:
   - To prevent malicious users from abusing a lab for personal gain.
   - To prevent additional charges from incurring by blocking users from creating items of a higher cost SKU than needed.
   - To help users stay within the goals of a lab by blocking them from unneeded resources.
   
-# Frequently Asked Questions:
+# Frequently Asked Questions
 
-## Will an Access Control Policy block my lab resource templates from deploying?
+## Will an Access Control Policy block my lab resource templates from deploying
 This depends on a couple of variables such as what your policy is blocking and your options selected on your lab profile in LOD. Below are the 2 different deployment scenarios and how they interact with your policy:
   
   - **Deployment Method 1: Resources deploy before the user is in the lab.**
@@ -36,7 +36,7 @@ This depends on a couple of variables such as what your policy is blocking and y
     - This deployment method is less common and is accomplished by selecting the "Deploy in Background" option on a resource template from the lab profile.
     - With these deployments the policies will be in place _while_ resources are deploying, so you will need to ensure there are exceptions within your policy for any resources the template is deploying.
 
-## Are there sample policies available somewhere?
+## Are there sample policies available somewhere
 Yes! For more samples, see the table below for each of the cloud providers:
 
 |Cloud Platform|LODS Sample|Official Samples|
@@ -44,7 +44,7 @@ Yes! For more samples, see the table below for each of the cloud providers:
 |Microsoft Azure|[LODS Azure Samples](./Azure/)|[Microsoft Docs](https://docs.microsoft.com/en-us/azure/governance/policy/samples/index)|
 |Amazon Web Services|[LODS AWS Samples](./AWS/)|[AWS Docs](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_examples.html)|
 
-## I'm creating a policy from scratch, how do I know what conditions or fields I can use?
+## I'm creating a policy from scratch, how do I know what conditions or fields I can use
 
 This will vary based on the cloud platform you are working with as noted below:
 
